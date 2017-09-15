@@ -1,0 +1,66 @@
+Arguments: 
+  /Users/sglanzer/bin/node /Users/sglanzer/bin/yarn
+
+PATH: 
+  /usr/local/bin:/Users/sglanzer/go/bin:/Users/sglanzer/.bin:/usr/local/opt/google-cloud-sdk/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:/Users/sglanzer/go/bin:/Users/sglanzer/.bin:/usr/local/opt/google-cloud-sdk/bin:/Users/sglanzer/bin:/Users/sglanzer/.composer/vendor/bin:/Users/sglanzer/bin:/Users/sglanzer/.composer/vendor/bin:/usr/local/bin
+
+Yarn version: 
+  1.0.0
+
+Node version: 
+  8.4.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+      "name": "vsc-ember-modules",
+      "displayName": "vsc-ember-modules",
+      "description": "Ember module import snippets for VSC",
+      "version": "0.0.1",
+      "publisher": "sglanzer",
+      "engines": {
+          "vscode": "^1.16.0"
+      },
+      "categories": [
+          "Other"
+      ],
+      "activationEvents": [
+        "workspaceContains:.ember-cli"
+      ],
+      "main": "./out/src/extension",
+      "contributes": {
+          "commands": [
+              {
+                  "command": "extension.sayHello",
+                  "title": "Hello World"
+              }
+          ]
+      },
+      "scripts": {
+          "vscode:prepublish": "npm run compile",
+          "compile": "tsc -p ./",
+          "watch": "tsc -watch -p ./",
+          "postinstall": "node ./node_modules/vscode/bin/install",
+          "test": "npm run compile && node ./node_modules/vscode/bin/test"
+      },
+      "devDependencies": {
+          "typescript": "^2.5.2",
+          "vscode": "^1.1.5",
+          "mocha": "^3.5.0",
+          "@types/node": "^7.0.43",
+          "@types/mocha": "^2.2.42"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND npm.npav.accedian.net npm.npav.accedian.net:4873
+      at errnoException (dns.js:53:10)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:95:26)
