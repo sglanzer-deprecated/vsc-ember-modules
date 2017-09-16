@@ -6,8 +6,8 @@ Ember module import snippets for VSC
 
 ```
 cd ~/Documents
-curl --remote-name https://raw.githubusercontent.com/sglanzer/vsc-ember-modules/master/vsc-ember-modules.vsix
-code --install-extension vsc-ember-modules.vsix
+curl --remote-name https://raw.githubusercontent.com/sglanzer/vsc-ember-modules/master/vsc-ember-modules-0.0.1.vsix
+code --install-extension vsc-ember-modules-0.0.1.vsix
 ```
 
 ## Features
